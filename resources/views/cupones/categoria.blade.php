@@ -47,7 +47,7 @@
 
                                 @if($cupon->establecimiento->imagen)
 
-                                    <img alt="Imagen del cupon" class="block rounded-full h-8" src="/storage/{{ $cupon->imagen->url}}">
+                                    <img alt="Imagen del cupon" class="block rounded-full h-8" src="/storage/{{ $cupon->establecimiento->imagen->url}}">
 
                                 @else
 
