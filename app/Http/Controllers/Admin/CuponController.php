@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\Establecimiento;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
+use App\Notifications\CodigosCreados;
 
 class CuponController extends Controller
 {
@@ -90,6 +91,10 @@ class CuponController extends Controller
                     'cupon_id' => $cupon->id,
                 ]);
             }
+
+            $usuario = $cupon->establecimiento->usuario;
+
+            $usuario->notify(new CodigosCreados($cupon));
         }
 
         return redirect()->route('admin.cupones.index')->with('info', 'El cupón se creó con éxito.');

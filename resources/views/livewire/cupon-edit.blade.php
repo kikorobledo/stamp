@@ -151,7 +151,7 @@
 
                                 <label for="codigos" class="block font-medium text-sm text-gray-700" >Número de códigos</label>
 
-                                <input readonly wire:model="codigos" type="number" min="0" name="codigos" id="codigos" class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 block w-full">
+                                <input @if($codigos != null) readonly @endif wire:model="codigos" type="number" min="0" name="codigos" id="codigos" class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm mt-1 block w-full">
 
                                 @error('codigos') <span class="block font-medium text-sm text-red-500">{{ $message }}</span> @enderror
 

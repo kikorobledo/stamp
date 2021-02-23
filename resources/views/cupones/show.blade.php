@@ -12,11 +12,15 @@
 
                     @if($cupon->imagen)
 
-                        <img alt="Imagen del cupon" class="object-cover object-center h-80 w-full rounded-md" src="/storage/{{ $cupon->imagen->url}}">
+                        <a href="/storage/{{ $cupon->imagen->url }}" data-lightbox="imagenes" data-title="Imagen del cupón">
+
+                            <img src="/storage/{{ $cupon->imagen->url}}" alt="Imagen del cupón" class="object-cover object-center h-80 w-full rounded-md">
+
+                        </a>
 
                     @else
 
-                        <img alt="Imagen del cupon" class="object-cover object-center h-80 w-full rounded-md" src="https://picsum.photos/600/400/?random">
+                        <img alt="Imagen del cupon" class="object-cover object-center h-80 w-full rounded-md" src="{{ asset('storage/img/logo2.png')}}">
 
                     @endif
 

@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CuponController;
-use App\Http\Controllers\ADmin\BannerController;
+use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\CodigosController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ComentarioController;

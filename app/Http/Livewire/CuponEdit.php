@@ -74,6 +74,9 @@ class CuponEdit extends Component
             'descripcion' => $descripcion,
         ]);
 
+        if($this->codigos)
+            $this->cupon->codigos_solicitados = $this->codigos;
+
         if($this->logo){
             $ruta_imagen = $this->logo->store('cupones','public');
 

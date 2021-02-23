@@ -42,6 +42,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/cupones/edit/{cupon}', [CuponController::class, 'edit'])->name('cupones.edit');
     Route::get('/cupones/edit/{cupon}', [CuponController::class, 'edit'])->name('cupones.edit');
     Route::post('/cupones/destroy/{cupon}', [CuponController::class, 'destroy'])->name('cupones.destroy');
+    Route::get('/cupones/codigos/{cupon}', [CuponController::class, 'codigos'])->name('cupones.codigos');
 });
 
 

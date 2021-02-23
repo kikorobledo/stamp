@@ -205,4 +205,13 @@ class CuponController extends Controller
 
         return view('cupones.mis_cupones', compact('establecimientos'));
     }
+
+    public function codigos(Cupon $cupon){
+
+        $this->authorize('author', $cupon);
+
+        $codigos = $cupon->codigos;
+
+        return view('codigos.index', compact('codigos', 'cupon'));
+    }
 }

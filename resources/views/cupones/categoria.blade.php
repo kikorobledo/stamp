@@ -13,7 +13,15 @@
 
                         <a href="{{ route('cupones.show', $cupon) }}">
 
-                            <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
+                            @if($cupon->imagen)
+
+                                <img alt="Imagen del cupon" class="block h-40 w-full" src="/storage/{{ $cupon->imagen->url}}">
+
+                            @else
+
+                                <img alt="Imagen del cupon" class="block h-40 w-full" src="{{ asset('storage/img/logo2.png')}}">
+
+                            @endif
 
                         </a>
 
@@ -37,7 +45,15 @@
 
                             <a class="flex items-center no-underline hover:underline text-black mb-2" href="{{ route('establecimientos.show',$cupon->establecimiento) }}">
 
-                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                @if($cupon->establecimiento->imagen)
+
+                                    <img alt="Imagen del cupon" class="block rounded-full h-8" src="/storage/{{ $cupon->imagen->url}}">
+
+                                @else
+
+                                    <img alt="Imagen del cupon" class="block rounded-full h-8" src="{{ asset('storage/img/logo2.png')}}">
+
+                                @endif
 
                                 <p class="ml-2 text-sm">
                                     {{ $cupon->nombre_establecimiento }}

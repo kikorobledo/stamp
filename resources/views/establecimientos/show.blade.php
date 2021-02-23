@@ -8,13 +8,17 @@
 
                 @if($establecimiento->imagen)
 
-                    <img class="rounded-xl" src="/storage/{{ $establecimiento->imagen->url }}" alt="">
+                        <a href="/storage/{{$establecimiento->imagen->url }}" data-lightbox="imagenes" data-title="Imagen del establecimiento">
 
-                @else
+                            <img src="/storage/{{$establecimiento->imagen->url}}" alt="Imagen del establecimiento" class="object-cover object-center h-80 w-full rounded-md">
 
-                    <img class="block h-60 w-50 mx-auto" src="{{ asset('storage/img/logo2.png')}}" alt="">
+                        </a>
 
-                @endif
+                    @else
+
+                        <img alt="Imagen del establecimienton" class="object-cover object-center h-80 w-full rounded-md" src="{{ asset('storage/img/logo2.png')}}">
+
+                    @endif
 
             </div>
 

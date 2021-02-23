@@ -97,6 +97,8 @@
                                         {{ ucfirst($cupon->estado) }}
                                     </span>
 
+                                    <a href="{{ route('cupones.codigos', $cupon) }}" class="w-full float-right text-white text-sm font-thin rounded-full border px-3 py-0 bg-gray-700">Códigos</a>
+
                                 </div>
 
                                 <div class="flex flex-col w-1/3">
