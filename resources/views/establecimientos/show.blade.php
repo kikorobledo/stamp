@@ -106,7 +106,7 @@
 
             <div class="col-span-2">
 
-                <div class=" text-xl mb-5 font-thin text-gray-500">{!! $establecimiento->descripcion !!}</div>
+                <div class=" text-xl mb-5 lg:font-thin text-gray-500">{!! $establecimiento->descripcion !!}</div>
 
                 @if(count($fotos) > 0)
 
@@ -228,11 +228,7 @@
 
         @if($establecimiento->premium == 1)
 
-            <hr>
-
             <div>
-
-                <h3 class="font-semibold text-3xl mt-10 mb-5 text-gray-500">Comentarios</h3>
 
                 @livewire('crear-comentario', ['establecimiento' => $establecimiento ] )
 

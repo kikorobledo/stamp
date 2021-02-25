@@ -59,11 +59,7 @@
             {{-- <a href="#" class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Stamp</a> --}}
             <div class="flex -mx-2 text-white mb-5 md:mb-0">
 
-                <img class="h-12 mr-2" src="{{ asset('storage/img/logo2.png') }}" alt="Logo">
-
-                <a class="navbar-brand text-white text-3xl ml-3" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                <img class="h-12 mr-2" src="{{ asset('storage/img/logo_blanco.png') }}" alt="Logo">
 
             </div>
 

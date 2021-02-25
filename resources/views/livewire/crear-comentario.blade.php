@@ -2,6 +2,10 @@
 
     @auth
 
+        <hr>
+
+        <h3 class="font-semibold text-3xl mt-10 mb-5 text-gray-500">Comentarios</h3>
+
         <form class="" wire:submit.prevent="enviarComentario" >
 
             <Textarea wire:model="contenido" class="w-full rounded-xl border border-gray-500 focus:border-gray-500 focus:ring-2 focus:ring-offset-2 mb-2 focus:ring-gray-600" placeholder="Has un comentario a {{ $establecimiento->nombre }}"></Textarea>

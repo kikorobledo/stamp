@@ -82,7 +82,7 @@
                         <div class="form-group">
 
                             {!! Form::label('fecha_de_vencimiento', 'Fecha De Vencimiento') !!}
-                            {!! Form::date('fecha_de_vencimiento', null, ['class' => 'form-control' . ($errors->has('fecha_de_vencimiento') ? ' is-invalid' : ''), 'placeholder' => 'Ingrese el precio del cupón', 'min' => '0']) !!}
+                            {!! Form::date('fecha_de_vencimiento', null, ['class' => 'form-control' . ($errors->has('fecha_de_vencimiento') ? ' is-invalid' : ''), 'placeholder' => 'Ingrese la fecha de vencimiento del cupón', 'min' => '0']) !!}
 
                             @error('fecha_de_vencimiento')
 

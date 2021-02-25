@@ -28,7 +28,7 @@
 
                 <div class="text-base text-gray-500 mt-4 mb-5">
 
-                    <div class="font-thin">{!! $cupon->descripcion !!}</div>
+                    <div class="lg:font-thin">{!! $cupon->descripcion !!}</div>
 
                     <p class="font-semibold mt-3 text-gray-500">El cupón se puede utilizar hasta el día: {{ \Carbon\Carbon::parse($cupon->fecha_de_vencimiento)->format('d/m/Y') }}</p>
 
@@ -62,7 +62,7 @@
 
                     </a>
 
-                    <div class="mb-5 text-gray-500 font-thin">{!! $cupon->establecimiento->descripcion !!}</div>
+                    <div class="mb-5 text-gray-500 lg:font-thin">{!! $cupon->establecimiento->descripcion !!}</div>
 
                 </div>
 

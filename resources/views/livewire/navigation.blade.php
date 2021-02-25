@@ -12,12 +12,8 @@
             {{-- Logo --}}
             <a href="/" class="flex-shrink-0">
 
-              <img class="h-8 w-8 " src="{{ asset('storage/img/logo2.png') }}" alt="Workflow">
+              <img class="h-8 " src="{{ asset('storage/img/logo_blanco.png') }}" alt="Logo">
 
-            </a>
-
-            <a class="navbar-brand text-white text-3xl ml-3" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
             </a>
 
             {{-- Menu LG --}}
@@ -40,15 +36,15 @@
 
                     <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
 
-                      <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 w-full ">
+                      <ul class="px-8 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 w-full ">
 
                         @foreach($categorias as $categoria)
-
-                            <a href="{{ route('cupones.categoria', $categoria) }}" class="text-gray-600 m-5  hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $categoria->nombre }}</a>
-
+                        <li>
+                            <a href="{{ route('cupones.categoria', $categoria) }}" class="text-gray-600  hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium inline-block">{{ $categoria->nombre }}</a>
+                        </li>
                         @endforeach
 
-                      </div>
+                      </ul>
 
                     </div>
 
