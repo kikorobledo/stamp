@@ -73,7 +73,7 @@
 
                     <a href="https://twitter.com/Stampmx_" class="hover:text-blue-400 text-4xl mr-5" title="Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
 
-                    <a href="https://wa.me/524435130410" class="hover:text-green-300 text-4xl mr-5" title="Twitter" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/524435130410" class="hover:text-green-300 text-4xl mr-5" title="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
                 </div>
 

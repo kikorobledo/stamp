@@ -61,11 +61,11 @@
 
                             </a>
 
-                            <div class="w-full">
+                            <div class="w-full mt-2">
 
                                 @foreach($cupon->tags as $tag)
 
-                                    <a href="{{ route('cupones.tag', $tag) }}" class="text-white rounded-full border px-3 bg-gray-400">{{ $tag->nombre }}</a>
+                                    <a href="{{ route('cupones.tag', $tag) }}" class="text-white rounded-full border px-3 py-0 bg-gray-400 text-sm font-thin">{{ $tag->nombre }}</a>
 
                                     @if ($loop->index == 1)
                                         @break

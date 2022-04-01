@@ -65,7 +65,7 @@
 
         <div class="mt-10">
 
-            <img class="w-full rounded-xl" src="{{ asset('storage/img/elige.png') }}" alt="">
+            <img class="w-full rounded-xl" src="{{ asset('storage/img/elige2.png') }}" alt="">
 
         </div>
 
@@ -118,7 +118,7 @@
 
                                 @else
 
-                                    <img alt="Logo del establecimiento" class="block rounded-full h-8" src="{{ asset('storage/img/logo2.png') }}">
+                                    <img alt="Logo del establecimiento" class="block rounded-full h-8 w-8" src="{{ asset('storage/img/logo2.png') }}">
 
                                 @endif
 

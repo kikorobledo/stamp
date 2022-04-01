@@ -222,9 +222,18 @@
 
                             <a href="{{ route('cupones.show', $cupon) }}" class="mr-3">
 
-                                <img alt="Imagen del cupon" class="object-cover object-center h-20 w-36 rounded-md" src="https://picsum.photos/600/400/?random">
+                                @if($cupon->imagen)
+
+                                    <img src="/storage/{{ $cupon->imagen->url}}" alt="Imagen del cupón" class="object-cover object-center h-20 w-36 rounded-md">
+
+                                @else
+
+                                    <img alt="Imagen del cupon" class="object-cover object-center h-20 w-36 rounded-md" src="{{ asset('storage/img/logo2.png')}}">
+
+                                @endif
 
                             </a>
+
 
                             <div>
 
@@ -232,7 +241,15 @@
 
                                 <a class="flex items-center no-underline  text-gray-500 mb-2" href="{{ route('establecimientos.show', $cupon->establecimiento) }}">
 
-                                    <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                    @if($cupon->establecimiento->imagen)
+
+                                        <img src="/storage/{{ $cupon->establecimiento->imagen->url}}" alt="Imagen del cupón" class="block rounded-full">
+
+                                    @else
+
+                                        <img alt="Imagen del cupon" class="block rounded-full" src="{{ asset('storage/img/logo2.png')}}">
+
+                                    @endif
 
                                     <p class="ml-2 text-sm">
 

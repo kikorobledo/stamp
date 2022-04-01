@@ -39,19 +39,19 @@
 
                                     <img class="rounded h-40  object-cover" src="{{ $logo->temporaryUrl() }}" alt="">
 
-                                @else
-
-                                    @if (!$logo && isset($cupon_logo))
-
-                                        <img class="rounded h-40 object-cover" src="/storage/{{ $cupon_logo }}" class="w-50 p-4">
-
                                     @else
 
-                                        <img class="rounded h-40 object-cover" src="{{ asset('storage/img/logo2.png') }}" alt="">
+                                        @if (!$logo && isset($cupon_logo))
+
+                                            <img class="rounded h-40 object-cover" src="/storage/{{ $cupon_logo }}" class="w-50 p-4">
+
+                                        @else
+
+                                            <img class="rounded h-40 object-cover" src="{{ asset('storage/img/logo2.png') }}" alt="">
+
+                                        @endif
 
                                     @endif
-
-                                @endif
 
                                 </div>
 
